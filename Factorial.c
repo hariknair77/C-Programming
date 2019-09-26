@@ -1,13 +1,14 @@
 # include <stdio.h>
+int fact(int n)
+{
+    if (n>1)
+        return n*fact(n-1);
+}
 void main()
 {
-int i=1, n;
-long fact=1;
-printf("Enter a number :");
-scanf("%d",&n);
-while (i<=n){
-fact*=i;
-i++;
-}
-printf("The Factorial of the number %d is %li.\n",n,fact);
+    int n,f=1.0;
+    printf("Enter the Number: ");
+    scanf("%d",&n);
+    f=fact(n);
+    printf("Factorial of %d = %d ",n,f);
 }
