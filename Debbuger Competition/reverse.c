@@ -1,3 +1,4 @@
+
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
@@ -23,7 +24,6 @@ char * reverse(char * s)
         *p++ = *q--;
         l --;
     }
-
     *p++ = '\0';
     return rev;
 }
