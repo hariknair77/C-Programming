@@ -1,7 +1,7 @@
 #include <stdio.h>
-#define bar() ({\
-		int var = 10;\
-    printf("var in bar: %d\n", var);})
+#define bar() {
+		int var = 10;
+    printf("var in bar: %d\n", var);}
 
 void foo()
 {

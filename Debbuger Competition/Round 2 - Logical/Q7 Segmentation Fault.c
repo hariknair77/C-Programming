@@ -1,6 +1,6 @@
 # include <stdio.h>
-
-struct Array
+// illustrate the concept of array using primitive and derived datatypes
+struct Array    //derived datatype
 {
   int elements[10];
   int len;
@@ -9,7 +9,7 @@ struct Array
 void main()
 {
   a.len = 0;
-  int b[10];
+  int b[10];    //primitive datatype
   for (int i= 1; i<= 10; i++)
   {
       a.elements [a.len] = i;

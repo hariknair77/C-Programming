@@ -6,7 +6,7 @@
 int length(char * s)
 {
   int l = 0;
-  char * t = &s[l];
+  char * t = &s[l];   //change
   while (*t++ != '\0')
      l ++;
   return l;
@@ -14,17 +14,17 @@ int length(char * s)
 
 char * reverse(char * s)
 {
-    int l = length(s) - 1;
-    char * rev = malloc(strlen(s) + 1);
+    int l = length(s) - 1;  //change
+    char * rev = malloc(strlen(s) + 1); //change
     char * p = rev;
-    char * q = &s[l];
+    char * q = &s[l];   //change
 
-    while(l  > -1)
+    while(l  > -1)    //change
     {
         *p++ = *q--;
         l --;
     }
-    *p++ = '\0';
+    *p++ = '\0';  //change
     return rev;
 }
 

@@ -1,6 +1,5 @@
+//illustrate pascals triangle of n lines using REcursive Function
 #include <stdio.h>
-
-long pascal(int,int);
 
 void main (void)
 {
@@ -15,7 +14,7 @@ void main (void)
         printf("\n ");
         for (int  i=0 ; i< ((n-k+1)/2) ; i++ )
             printf(" ");
-        for(  m = 1 ; k >= m   ; m++ )
+        for(  m = 1 ; k > m   ; m++ )
         {
             long f = pascal(k , m ) ;
             printf("%ld " , f);
@@ -26,10 +25,8 @@ void main (void)
 
 long pascal( int n , int i )
 {
-    if (i<0 || n<0 || i>n)
-        return 0;
     if(n == 1 && i == 1 )
         return 1 ;
     else
-        return pascal(n-1,i) + pascal(n-1,i-1);
+        return pascal(n,i) + pascal(n-1,i-1);
 }

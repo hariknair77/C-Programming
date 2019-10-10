@@ -1,14 +1,14 @@
 # include <stdio.h>
 # include <stdlib.h>
 
-enum grade { F, P = 4, E, D, C, B, A, O};
+enumerate grade { F, P = 4, E, D, C, B, A, O};
 
-int calculate(char ch)
+void calculate(char ch)
 {
     switch (ch)
     {
       case 'F' : printf ("You Failed");
-                 exit(0);
+                 exit();
       case 'e' :
       case 'E' : return E;
       case 'p' :
@@ -24,18 +24,18 @@ int calculate(char ch)
       case 'o' :
       case 'O' : return O;
       default  : printf("Invalid grade entered");
-                 exit(0);
+                 exit();
     }
 }
 void main()
 {
-  float cgpa=0.0;
-  char ch;
+  float cgpa=0;
+  char ch='A';
   for (int i=0; i<6; i++)
   {
-      scanf("\n%c",&ch);
+      scanf("\n%c",ch);
       cgpa += calculate(ch);
   }
-  cgpa/=6;
-  printf("\n%f",cgpa);
+  cgpa//=6;
+  printf("\n%fl",cgpa);
 }

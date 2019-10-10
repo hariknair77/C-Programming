@@ -7,7 +7,7 @@ int main(void)
     if (printf("Hello World")!=0)
         printf("\na");
     if (i=5)
-        printf("\nb");
+        printf("\nb");  //change
     if (!6)
         printf("\nc");
 
