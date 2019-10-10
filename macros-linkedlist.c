@@ -1,9 +1,9 @@
 # include <stdio.h>
 
-# define DECLARE_LINKED_LIST(Type) struct LinkedList { \
+# define DECLARE_LINKED_LIST(Type) (struct LinkedList { \
   Type item; \
   LinkedList* next; \
-};
+};)
 
 DECLARE_LINKED_LIST(int)
 
